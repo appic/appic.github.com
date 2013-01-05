@@ -10,52 +10,54 @@
 	<link href='http://fonts.googleapis.com/css?family=Electrolize' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="css/reset.css" type="text/css" media="screen, projection, print" />
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="screen, projection, print" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.2/jquery-ui.min.js"></script>
+    <script src="js/script.js"></script>
 </head>
 
 <body>
 
-<div class="container">	
-	<div class="blue-bg"></div>
-	<div id="logo">		
-		<a href="http://appic.com.hk">
-			<img src="images/appic.png" alt="Appic"/>
-		</a>
-		<h3 class="slogan">“Platforms, Communication, Sharing”</h3>
-	</div>
+<div class="container">		
+	<div id="header">
+        <div id="logo">		
+            <a href="http://appic.com.hk">
+                <img src="images/appic.png" alt="Appic" width="400"/>
+            </a>            
+        </div>
+        <ul id="slogan">
+        	<li class="animate" data-color="#66CB76" data-hover-color="#44BE32">Innovation</li>
+            <li>&amp;</li>
+            <li class="animate" data-color="#448CCB" data-hover-color="#5C84AE">Creativity</li>            
+        </ul>
+        <div class="clear"></div>
+    </div>
 	
 	<div id="columns">
 		<div class="column first">
-			<h2>We are Appic Tech Limited</h2>
-			<hr/>
+			<h2>About us</h2>
 			<div>
-				<p>Appic is software development company which provides apps and platforms to connect different parties together and improve people’s life through information sharing.</p>
-				<img src="images/puzzle.png" class="puzzle" alt="Connection"/>
+				<p>Appic is a software development company with focus on innovation and creativity. Through our technology, we hope to enable people to innovate and visualize their creativity.</p>				
 			</div>
 		</div>
 		<div class="column">
-			<h2>We develop web and mobile apps</h2>
-			<hr/>
+			<h2>Services</h2>
 			<div>
-				<p>We mainly develop apps on android, iOS and the web platform. We are always looking for new clients and partners so please <a href="mailto:info@appic.com.hk">contact us</a> if you have got an idea. </p>
+				<p>We develop apps on android, iOS and the web platform for clients. Email us at <a href="mailto:info@appic.com.hk">info@appic.com.hk</a> for more details.</p>
 				<img src="images/android.png" class="platform-icon" alt="Android"/>
 				<img src="images/apple.png" class="platform-icon" alt="iOS"/>
 				<img src="images/HTML5.png" class="platform-icon" alt="Web"/>
 			</div>
 		</div>
-		<div class="column last">
-			<h2>We need your support</h2>
-			<hr/>
+		<div class="column">
+			<h2>Products</h2>
 			<div>
-				<p>Being based on the idea of sharing, our applications would not be as useful without your participation.</p>
-				<p>Check out our Facebook page to see how you can make a difference:</p>
-				<a href="#" target="_blank" class="facebook">Find us on<span>Facebook</span></a>
+				<p>An app platform is currently under development. We will provide more information soon.</p>
 			</div>
 		</div>
 	</div>
 	
 	<div id="footer">
-		<span id="enquiry">enquiry: <a href="mailto:info@appic.com.hk">info@appic.com.hk</a></span>
-		&copy; 2012, Appic Tech Limited. All rights reserved.
+    	<span id="copyright">&copy; 2012, Appic Tech Limited. All rights reserved.</span>
 	</div>
 </div>
 
