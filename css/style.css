@@ -1,7 +1,8 @@
 /* General elements  */
 
 body {
-	background: #EAEAEA url('../images/bg.png') repeat-x left top;
+	/* background: #EAEAEA url('../images/bg.png') repeat-x left top; */
+	background: #EAEAEA;
 	font-size: 14px;
 	font-family: 'Electrolize', helvetica, arial, sans-serif;
 	color: #4F4F4F;
@@ -16,7 +17,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 h1,h2 {
-	text-shadow: #BBBBBB 2px 2px 2px;
+	text-shadow: #FFFFFF 0px 2px 4px;
 }
 
 h1 { font-size: 3em; line-height:1.1; letter-spacing:0.05em; }
@@ -39,46 +40,71 @@ a:hover, a:active {
 	text-decoration: underline;
 }
 
+.clear {
+	clear: both;
+}
+
 /* Main container  */
 .container {
-	min-width: 960px;
+	width: 960px;
 	margin: 0 auto;
 	position: relative;
 	overflow: hidden;
 }
 
 div.blue-bg {
-	width: 1024px;
-	height: 460px;
+	width: 40%;
+	height: 40%;
 	position: absolute;
 	top: 0;
-	left: 50%;	
-	margin-left: -512px;
+	left: 0;	
 	z-index: -1;
 	background-color: #5C84AE;
 }
 
+#header {
+	position: relative;
+	width: 100%;
+	margin-bottom: 20px;
+	display: block;
+}
+
 /* Logo */
 #logo {
-	background: transparent url('../images/header_bg.png') no-repeat center top;
+	background: none;
 	display: block;
-	padding: 18px 0 60px 0;
+	margin: 30px 0 0 0;
+	padding: 18px 0 20px 0;
+	width: 420px;
+	float: left;
 }
 
 #logo a {
-	display: block;
-	width: 600px;
-	margin: 0 auto;
+	display: block;	
 }
 
 /* Slogan */
-h3.slogan {
+#slogan {
 	display: block;
-	width: 620px;
-	margin: 10px auto;
-	text-align: right;
-	color: #EAEAEA;
-	text-shadow: #0060A6 0 0 1px;
+	position: relative;
+	float: left;
+	width: 520px;
+	margin: 220px 0 0 20px;
+	list-style-type: none;
+	font-size: 2.3em; 
+	line-height: 1.1; 
+	letter-spacing: 0.05em;
+	color: #767676;
+	font-weight: bold;
+	font-variant: small-caps;
+	text-shadow: 0px 2px 4px #FFFFFF;	
+}
+
+#slogan li {
+	dispaly: block;
+	float: left;
+	margin: 0 10px;
+	cursor: default;
 }
 
 /* Columns */
@@ -92,32 +118,14 @@ h3.slogan {
 
 #columns .column {
 	width: 249px;
-	height: 300px;
 	float: left;
-	margin-left: -1px;
 	padding: 5px 20px;
-	border-left: 1px dashed #999;
-	border-right: 1px dashed #999;
 	position: relative;
 }
 
-#columns .column.first {
-	margin-left: 0;
-	border-left: none;
-}
-
-#columns .column.last {
-	border-right: none;
-}
-
 #columns .column h2 {
-	text-align: center;
 	display: block;
 	margin-bottom: 10px;
-}
-
-#columns .column p {
-	text-align: center;
 }
 
 #columns .column hr {
@@ -175,8 +183,7 @@ a.facebook:hover, a.facebook:active {
 	
 }
 
-#enquiry {
+#copyright {
 	display: block;
-	float: left;
 	text-align: left;	
 }
